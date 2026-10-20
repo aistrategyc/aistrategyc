@@ -2,6 +2,17 @@
 
 The case studies describe implemented scope and the owner's stated responsibilities. Architecture diagrams explain system boundaries; they are not captures of private infrastructure. Client-specific records and credentials are omitted.
 
+## Public examples — 20 October 2026
+
+| Repository | Tests | CI |
+|---|---:|---|
+| Reliable webhooks | 24 | [Run](https://github.com/aistrategyc/reliable-webhook-lab/actions/runs/39478483152) |
+| Tenant access | 29 | [Run](https://github.com/aistrategyc/tenant-access-lab/actions/runs/39478507760) |
+| Analytics pipeline | 23 | [Run](https://github.com/aistrategyc/analytics-pipeline-lab/actions/runs/39478533811) |
+| Source-aware RAG | 21 | [Run](https://github.com/aistrategyc/source-aware-rag-lab/actions/runs/39478561636) |
+
+All 97 tests pass locally and in CI on each of Python 3.11 and 3.13 with PostgreSQL 17. The workflows also run lint, formatting checks, the demo and package builds. These results belong to the independent public examples; they do not extend the private product test counts below. The RAG generator is deterministic and makes no external model calls.
+
 ## Selected checks — 18 October 2026
 
 | Reference | Checks passed | What was exercised | Environment |
