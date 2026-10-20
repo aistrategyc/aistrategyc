@@ -16,7 +16,7 @@ Connect internal business workflows, Altegio CRM, management dashboards and mark
 
 ## Architecture
 
-A simplified view of the implemented system; deployment and provider activation vary by product.
+The diagram summarizes the delivered ERP and Altegio integration described by the project owner; private backend source is not published.
 
 ```mermaid
 flowchart LR
@@ -54,7 +54,7 @@ Developed an internal ERP with Altegio CRM integration and management dashboards
 - Created management dashboards and marketing processes covering strategy, promotion planning and reporting.
 - Delivered and handed over the project to the client. NDA-protected internals are described through the shareable delivery scope without exposing customer data.
 
-### Technology and its purpose
+### Stack
 
 | Technology | Responsibility |
 |---|---|
@@ -82,13 +82,13 @@ Delivered an internal ERP, Altegio CRM integration, management dashboards and ma
 - **Personally implemented:** Internal ERP with Altegio CRM integration and management dashboards.
 - **Strategy & handover:** Marketing strategy, commercial processes and promotion calendar. The project was handed over to the client.
 
-### Scope and boundaries
+### Delivery notes
 
 Project handed over to the client. Internal implementation data and results are protected by NDA.
 
 
-### Explore
+### Links
 
 - [Project case](https://proleev.com/en/case-studies/loveepil)
 
-[Selected verification and evidence policy](../engineering/evidence.md)
+[Verification notes](../engineering/evidence.md)

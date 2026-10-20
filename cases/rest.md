@@ -16,7 +16,7 @@ Connect restaurant communications, Guest 360, menu and staff analytics, and empl
 
 ## Architecture
 
-A simplified view of the implemented system; deployment and provider activation vary by product.
+Guest records connect the web workspace and mobile inbox with the configured restaurant and communication sources.
 
 ```mermaid
 flowchart LR
@@ -54,7 +54,7 @@ Built communications and Guest 360 alongside electronic menus, menu and staff an
 - Periods, currencies and source coverage accompany metrics. Missing data stays unknown, and a live connector is not proof of complete sales data.
 - Instagram Direct, comments and mentions retain source context in the inbox and Guest 360. AI manager assist analyzes intent and prepares reply suggestions; staff review and provider readiness govern sending.
 
-### Technology and its purpose
+### Stack
 
 | Technology | Responsibility |
 |---|---|
@@ -83,13 +83,13 @@ A restaurant workspace connects guest communications, reservations, influencer C
 - **Product development:** Connect restaurant performance, social conversations and Guest 360 context while preserving brand/location access and human control over replies.
 - **Product leadership:** Product scope and integration decisions across the ecosystem.
 
-### Scope and boundaries
+### Delivery notes
 
 The delivered platform supports client-branded configurations. Each rollout has its own source coverage, permissions and support scope; no conversion uplift is claimed.
 
-### Explore
+### Links
 
 - [Project case](https://proleev.com/en/products/rest)
 - [Public product](https://rest.planerix.com)
 
-[Selected verification and evidence policy](../engineering/evidence.md)
+[Verification notes](../engineering/evidence.md)

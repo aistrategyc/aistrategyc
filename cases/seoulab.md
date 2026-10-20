@@ -16,7 +16,7 @@ Build a complete skincare store: product discovery, customer accounts, reliable 
 
 ## Architecture
 
-A simplified view of the implemented system; deployment and provider activation vary by product.
+Storefront and administration use the commerce API for catalogue, order and stock operations.
 
 ```mermaid
 flowchart LR
@@ -53,7 +53,7 @@ Delivered the storefront, commerce backend, administration and deployment. Publi
 - Idempotent order creation, transactional rollback and signed Stripe webhooks handle retries and payment-state changes. The payment flow was tested in the preview environment.
 - The admin panel supports catalogue work, orders and validated supplier CSV drafts. Public catalogue mode is separated from checkout and account writes.
 
-### Technology and its purpose
+### Stack
 
 | Technology | Responsibility |
 |---|---|
@@ -84,13 +84,13 @@ Delivered a branded storefront and full commerce application. The public release
 - **Personally implemented:** Frontend, commerce backend, admin functions and deployment.
 - **Release responsibility:** Public catalogue release and protected commerce preview; payment/account capabilities are described by their actual release mode.
 
-### Scope and boundaries
+### Delivery notes
 
 Personal scope is end-to-end store development and deployment. Public catalogue mode is live; public checkout, live payment acceptance and commercial uplift are not asserted.
 
-### Explore
+### Links
 
 - [Project case](https://proleev.com/en/case-studies/seoulab)
 - [Public catalogue](https://seoulab.pl)
 
-[Selected verification and evidence policy](../engineering/evidence.md)
+[Verification notes](../engineering/evidence.md)

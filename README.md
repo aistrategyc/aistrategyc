@@ -4,15 +4,28 @@
 
 **Software Architect · Full-Stack Developer · Data & Applied AI**
 
-I build business systems that connect people, records and daily work: SaaS workspaces, native iOS applications, commerce, analytics and automation.
+I design and build SaaS platforms, web and native iOS applications, data pipelines and AI-assisted workflows.
 
-My background spans hands-on development, product architecture and business operations. I work from the process and its constraints through to interfaces, integrations and delivery. Each case states where I designed, implemented or led the work.
+My work usually connects several parts of a business: orders and payments, documents and accounting, team tasks and metrics, or customer conversations and CRM. I also bring experience leading operations across a multi-location business. The case studies describe my responsibility in each project.
 
 [Portfolio](https://proleev.com/en) · [Engineering services](https://aisolutionsbi.pl/en) · [Planerix](https://planerix.com/en)
 
 <br clear="right">
 
-## What I help teams build
+## Public engineering examples
+
+Small, runnable projects with PostgreSQL, failure tests and CI. Each focuses on a specific engineering problem and uses synthetic data.
+
+| Repository | Start here if you want to review… |
+|---|---|
+| [Reliable webhooks](https://github.com/aistrategyc/reliable-webhook-lab) | Payment idempotency, transactional outbox, worker leases and recovery after a crash |
+| [Tenant access](https://github.com/aistrategyc/tenant-access-lab) | API authorization, revoked membership, cross-tenant access tests and concurrent edits |
+| [Analytics pipeline](https://github.com/aistrategyc/analytics-pipeline-lab) | Incremental ETL, late data, source revisions and reconciled reporting |
+| [Source-aware RAG](https://github.com/aistrategyc/source-aware-rag-lab) | Source revalidation, cited context and user-confirmed actions |
+
+These are independent reference implementations. Their READMEs explain the trade-offs and the remaining work before deployment. Production repositories stay private.
+
+## Work I take on
 
 - **Business platforms:** organizations, roles, shared work, documents and operational workflows.
 - **Products and commerce:** customer journeys connected to payments, subscriptions and fulfilment.
@@ -45,7 +58,7 @@ My background spans hands-on development, product architecture and business oper
 
 Integration work includes Stripe, Google Ads, Meta, GA4, Telegram, Instagram, Syrve/iiko, ChoiceQR, Altegio, KSeF and InsERT. The case pages explain the role and activation boundaries of each integration.
 
-## How I approach engineering
+## Engineering choices
 
 - Keep the authoritative record separate from derived analytics and retrieval indexes.
 - Recheck access at the API and source record, including after retrieval.
@@ -53,8 +66,8 @@ Integration work includes Stripe, Google Ads, Meta, GA4, Telegram, Instagram, Sy
 - Test failure paths such as retries, stale versions, rollback and duplicate callbacks.
 - Make the operating process understandable to the team that will use it.
 
-[Engineering practices](engineering/practices.md) · [Architecture decisions](engineering/decisions.md) · [Evidence and selected verification](engineering/evidence.md)
+[Integration and delivery work](engineering/practices.md) · [Architecture decisions](engineering/decisions.md) · [Verification notes](engineering/evidence.md)
 
-Production source code stays private. This repository contains public case studies, explanatory diagrams and approved interface examples. Client data covered by NDA is omitted; demo and prototype screens are labelled.
+This repository contains case studies, architecture diagrams and approved interface examples. Client data covered by NDA is omitted; demo and prototype screens are labelled.
 
 For project enquiries, use [proleev.com](https://proleev.com/en) or [AISOLUTIONS](https://aisolutionsbi.pl/en).

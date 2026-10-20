@@ -16,7 +16,7 @@ Connect advertising spend, website activity and CRM requests into a consistent a
 
 ## Architecture
 
-A simplified view of the implemented system; deployment and provider activation vary by product.
+Source ingestion, warehouse transformations and KPI definitions form separate layers of the reporting system.
 
 ```mermaid
 flowchart LR
@@ -54,7 +54,7 @@ Led data and ETL/API architecture, attribution, KPI and semantic layers, fronten
 - Application identity and tasks resolve from Core; IT STEP analytics resolves from its analytics database. Backend guards and workspace-aware navigation enforce this boundary.
 - Attribution views, metric monitoring and AI-agent workflows connect data preparation with analysis and follow-up work. Source freshness remains visible as a separate operational concern.
 
-### Technology and its purpose
+### Stack
 
 | Technology | Responsibility |
 |---|---|
@@ -79,14 +79,14 @@ Delivered the data and application layers for end-to-end analytics: source inges
 - **Led implementation:** ETL/API architecture, attribution, databases, KPI and semantic layers, frontend/backend, monitoring and AI-assisted workflows.
 - **Led & coordinated:** Connected business, marketing, finance and technology requirements; guided implementation and operational use.
 
-### Scope and boundaries
+### Delivery notes
 
 Personal responsibility is engineering project leadership across the listed data and application layers. The architecture evidence is historical; current tenant uptime, attribution accuracy and ROI are not claimed.
 
 Some internal data and implementation details are protected by NDA. Public examples identify demonstration or prototype interfaces.
 
-### Explore
+### Links
 
 - [Project case](https://proleev.com/en/case-studies/itstep)
 
-[Selected verification and evidence policy](../engineering/evidence.md)
+[Verification notes](../engineering/evidence.md)

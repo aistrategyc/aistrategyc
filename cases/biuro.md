@@ -16,7 +16,7 @@ Connect mobile document capture, company finance and accounting work without los
 
 ## Architecture
 
-A simplified view of the implemented system; deployment and provider activation vary by product.
+Documents and company financial records share an API, with separate checks for document access and finance permissions.
 
 ```mermaid
 flowchart LR
@@ -54,7 +54,7 @@ Connected mobile scanning, invoice parsing, financial analysis, official-source 
 - Decimal calculations and explicit allocations keep document totals, provider payment evidence and bank cash distinct. Currency, company and period boundaries remain visible.
 - Company-finance grants and independent document checks constrain chat and AI. Answers retain source references; changed access or evidence blocks a stale response.
 
-### Technology and its purpose
+### Stack
 
 | Technology | Responsibility |
 |---|---|
@@ -83,13 +83,13 @@ A company workspace connects document capture, invoice parsing, reconciled finan
 - **Product development:** Document capture and parsing, company finance, registry connections, accounting workflows and source-based AI across web and native iOS.
 - **Product leadership:** Product scope and integration decisions across the ecosystem.
 
-### Scope and boundaries
+### Delivery notes
 
 Provider access requires configuration. VAT workpapers and reporting controls support accountant review; automatic filing, government acceptance and tax correctness certification are not claimed. Demo figures are fictional.
 
-### Explore
+### Links
 
 - [Project case](https://proleev.com/en/products/biuro)
 - [Public product](https://leg.planerix.com)
 
-[Selected verification and evidence policy](../engineering/evidence.md)
+[Verification notes](../engineering/evidence.md)

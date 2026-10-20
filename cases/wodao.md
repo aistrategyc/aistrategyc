@@ -16,7 +16,7 @@ Keep subscriptions, payment events, orders and physical delivery in agreement wh
 
 ## Architecture
 
-A simplified view of the implemented system; deployment and provider activation vary by product.
+The applications share order and subscription records. Payment callbacks and notification workers have separate responsibilities.
 
 ```mermaid
 flowchart LR
@@ -53,7 +53,7 @@ Connected storefront, customer and courier apps with subscriptions, payments, de
 - Orders, order events and subscription periods are explicit data structures. Customer and courier journeys share the operational record.
 - A worker dispatches notification events and outbox records. Delivery status and exceptions remain part of the service workflow.
 
-### Technology and its purpose
+### Stack
 
 | Technology | Responsibility |
 |---|---|
@@ -82,13 +82,13 @@ A digital operating system for an independent delivery business: commerce, recur
 - **Delivered components:** Customer and courier applications, subscription/payment flows, delivery workflows and the supporting data/integration layer.
 - **Operational responsibility:** Product requirements, release priorities and the relationship between software and the operating delivery business.
 
-### Scope and boundaries
+### Delivery notes
 
 Ownership covers product direction, commerce and operating workflows. Provider services remain external dependencies. Revenue uplift, delivery SLA and universal event deduplication are not claimed.
 
-### Explore
+### Links
 
 - [Project case](https://proleev.com/en/products/wodao)
 - [Public business](https://wodao.pl)
 
-[Selected verification and evidence policy](../engineering/evidence.md)
+[Verification notes](../engineering/evidence.md)

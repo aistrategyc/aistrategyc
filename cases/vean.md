@@ -52,7 +52,7 @@ Led KPI/OKR governance, reporting, process standards, unit economics and ERP/CRM
 - CRM, project work and procedures support responsibilities and coordinated marketing operations.
 - Source collection from Meta, Google, CRM and Bitrix supports common metric definitions and BI prototypes. Customer-tool initiatives formed part of the wider systems work.
 
-### Technology and its purpose
+### Stack
 
 | Technology | Responsibility |
 |---|---|
@@ -80,14 +80,14 @@ Operations, CRM, marketing automation, metric definitions and BI prototypes, alo
 - **Led systems initiatives:** ERP/CRM/BI foundations, automation, customer/internal tools, marketing and sales analytics.
 - **Led & coordinated:** COO responsibility across marketing, sales, operations and finance; network remit of 16 countries and 100+ employees.
 
-### Scope and boundaries
+### Delivery notes
 
 The role combines operating leadership and technical delivery coordination. Prototype reporting is not presented as a fully accepted production BI estate; measured ROI is not published.
 
 Some internal data and implementation details are protected by NDA. Public examples identify demonstration or prototype interfaces.
 
-### Explore
+### Links
 
 - [Project case](https://proleev.com/en/case-studies/vean)
 
-[Selected verification and evidence policy](../engineering/evidence.md)
+[Verification notes](../engineering/evidence.md)

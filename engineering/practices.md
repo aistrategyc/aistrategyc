@@ -1,6 +1,6 @@
-# Engineering practices
+# Integration and delivery work
 
-These are capabilities demonstrated across the named products, rather than six additional client engagements.
+The same integration problems recur across products. Here is where the approaches were used and what the implementation had to handle.
 
 | Practice | What the implementation addresses | Reference work |
 |---|---|---|
@@ -33,3 +33,14 @@ The pattern varies by domain. A notification worker does not own payment truth; 
 - Prepare release and operating procedures for an existing product.
 
 Scope, ownership and validation are agreed for the particular system. See the [case studies](../cases/README.md) for work already delivered.
+
+## Runnable examples
+
+The public examples isolate four of these problems:
+
+- [Webhook delivery](https://github.com/aistrategyc/reliable-webhook-lab): transaction boundaries and background recovery.
+- [Tenant access](https://github.com/aistrategyc/tenant-access-lab): current permissions and record scope.
+- [Analytics](https://github.com/aistrategyc/analytics-pipeline-lab): the data contract between source adapters, ETL and reporting.
+- [RAG](https://github.com/aistrategyc/source-aware-rag-lab): source access and reviewed changes.
+
+Each has a locked environment, PostgreSQL tests, CI and operating notes. The analytics and RAG notes also describe where an n8n adapter would connect. They do not include a live n8n connector or a production deployment.

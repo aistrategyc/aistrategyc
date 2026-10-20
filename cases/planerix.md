@@ -16,7 +16,7 @@ Connect people, projects, tasks and business metrics in a shared work model, whi
 
 ## Architecture
 
-A simplified view of the implemented system; deployment and provider activation vary by product.
+Web and native iOS share the work model. PostgreSQL owns the records; search indexes provide candidates for source revalidation.
 
 ```mermaid
 flowchart LR
@@ -53,7 +53,7 @@ Designed a shared web and iOS workspace for projects, dependencies, KPI/OKR cont
 - Task and event proposals are prepared, reviewed and confirmed. Version checks and stable operation IDs protect retries and concurrent edits.
 - Source-backed metrics and bounded entity/event graphs feed the same question context; historical memory is revalidated.
 
-### Technology and its purpose
+### Stack
 
 | Technology | Responsibility |
 |---|---|
@@ -84,13 +84,13 @@ A web and native iOS execution workspace connects team tasks, KPI/OKR context, C
 - **Product development:** Canonical work records, source-aware assistance and reviewed task/event changes across the shared work model.
 - **Product leadership:** Product scope and integration decisions across the ecosystem.
 
-### Scope and boundaries
+### Delivery notes
 
 The case demonstrates architecture and delivered workflows. It does not claim a measured productivity uplift or a complete independent security audit. iOS distribution is arranged separately.
 
-### Explore
+### Links
 
 - [Project case](https://proleev.com/en/products/planerix)
 - [Public product](https://planerix.com/en)
 
-[Selected verification and evidence policy](../engineering/evidence.md)
+[Verification notes](../engineering/evidence.md)

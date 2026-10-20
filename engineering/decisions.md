@@ -20,6 +20,8 @@ sequenceDiagram
 
 PostgreSQL remains authoritative; the index helps locate context. This adds a source lookup, but allows permissions, deletions and versions to govern the answer. Entity relationships help rank and explain context; they do not establish causality. [Planerix case](../cases/planerix.md).
 
+[Run the independent RAG example](https://github.com/aistrategyc/source-aware-rag-lab) to test stale sources, revoked access and concurrent action confirmations.
+
 ## 2. Keep a payment callback from completing checkout twice
 
 **Reference: WODAO checkout completion.** A provider callback can arrive again while the first operation is still running.
@@ -27,6 +29,8 @@ PostgreSQL remains authoritative; the index helps locate context. This adds a so
 The handler verifies the signature, obtains a provider-session advisory lock, reloads checkout state and checks whether completion already happened. The dedicated connection retains lock ownership across ORM commits. Notification delivery runs separately through workers and outbox records.
 
 The scope is the described checkout-completion path, not a claim of exactly-once execution across all services. Local tests cover lock lifecycle and late events with database/provider doubles; a live PostgreSQL concurrency test is a separate check. [WODAO case](../cases/wodao.md).
+
+[Run the independent webhook example](https://github.com/aistrategyc/reliable-webhook-lab) for real PostgreSQL concurrency and crash-recovery tests. It implements its own synthetic provider contract; its results are not additional WODAO test results.
 
 ## 3. Separate collection from interpretation
 
@@ -42,3 +46,5 @@ flowchart LR
 ```
 
 Separate layers make the reporting definition inspectable without overwriting the source. Reporting periods, identities and source cadence remain part of the model. The public case uses diagrams derived from archived workflow/SQL exports; it does not publish client rows, credentials or unmeasured throughput. [IT STEP case](../cases/itstep.md).
+
+[Run the independent analytics example](https://github.com/aistrategyc/analytics-pipeline-lab) to inspect the watermark, revision history and reporting-grain checks.

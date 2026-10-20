@@ -16,7 +16,7 @@ Deliver a restaurant system that the client can operate in its own environment u
 
 ## Architecture
 
-A simplified view of the implemented system; deployment and provider activation vary by product.
+The client deployment reuses the REST product model with its own branding and configured location context.
 
 ```mermaid
 flowchart LR
@@ -52,7 +52,7 @@ Delivered a client-branded REST configuration with dedicated services, databases
 - The delivery includes a client-branded REST application, dedicated databases and service configuration on the client’s infrastructure.
 - Syrve configuration and project/location filters accompany operational documentation. Licence and support scope remain defined in the agreement.
 
-### Technology and its purpose
+### Stack
 
 | Technology | Responsibility |
 |---|---|
@@ -74,14 +74,14 @@ A client-branded REST deployment with dedicated infrastructure, Syrve configurat
 - **Implementation:** Dedicated application services, database configuration and agreed Syrve source filters.
 - **Handover:** Deployment configuration and documentation for client operation under the agreed licence and support scope.
 
-### Scope and boundaries
+### Delivery notes
 
 The contribution is client configuration, infrastructure delivery and handover of REST. Product reuse is explicit; uptime commitments and intellectual-property terms are not inferred from this case.
 
 Some internal data and implementation details are protected by NDA. Public examples identify demonstration or prototype interfaces.
 
-### Explore
+### Links
 
 - [Project case](https://proleev.com/en/case-studies/urban)
 
-[Selected verification and evidence policy](../engineering/evidence.md)
+[Verification notes](../engineering/evidence.md)

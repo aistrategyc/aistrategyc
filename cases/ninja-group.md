@@ -16,7 +16,7 @@ Connect distinct restaurant brands with shared operating processes, source data 
 
 ## Architecture
 
-A simplified view of the implemented system; deployment and provider activation vary by product.
+Brand websites connect with the customer, operating and reporting layers described below.
 
 ```mermaid
 flowchart LR
@@ -52,7 +52,7 @@ Developed websites, internal ERP/CRM, an application, dashboards, advertising se
 - Brand websites keep their own identity; project and restaurant context organize the shared management workspace.
 - Sales and marketing sources feed reporting. Instagram Direct, the AI communication assistant and CRM connect the conversation to its context.
 
-### Technology and its purpose
+### Stack
 
 | Technology | Responsibility |
 |---|---|
@@ -83,15 +83,15 @@ Restaurant websites, ERP/CRM, marketing data and mobile workflows through REST/P
 - **Personally implemented:** Websites, internal CRM, application, dashboards, advertising account setup and end-to-end analytics.
 - **Strategy & delivery:** Marketing strategy and connection of commercial activity with operational and analytical workflows.
 
-### Scope and boundaries
+### Delivery notes
 
 Personal scope is systems architecture and delivery across the listed workstreams. Brand operations and third-party products are not presented as solely authored software; commercial uplift is not quantified.
 
 Some internal data and implementation details are protected by NDA. Public examples identify demonstration or prototype interfaces.
 
-### Explore
+### Links
 
 - [Project case](https://proleev.com/en/case-studies/ninja-group)
 - [Delivered website / CouCou](https://coucoubistro.com)
 
-[Selected verification and evidence policy](../engineering/evidence.md)
+[Verification notes](../engineering/evidence.md)
